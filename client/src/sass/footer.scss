@@ -1,0 +1,88 @@
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      @include transform(rotate($angle-offset + $angle-per-char * $i))
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#footer-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  #involved-container{
+    display: flex;
+    padding-left: 96px;
+    padding-bottom: 64px;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    height: 300px;
+
+    h1 {
+      font-family: 'AvenirRegular';
+      font-size: 28px;
+      margin: 0px;
+      position: relative;
+      transform-origin: 10px 150px;
+      animation: rotation 10s infinite;
+      animation-timing-function: linear;
+
+      span {
+        letter-spacing: 2px;
+        height: 150px;
+        position: absolute;
+        width: 20px;
+        left: 0;
+        top: 0;
+        transform-origin: bottom center;
+        display: flex;
+        justify-content: center;
+      }
+
+      @include rotated-text(42, 360deg, 0deg)
+    }
+
+    #icon-container{
+      height: 0px;
+      width: 0px;
+      margin-top: auto;
+    }
+
+    i{
+      width: 24px;
+      height: 24px;
+      margin-top: -24px;
+      transition-duration: 500ms;
+      transform: scale(6.0);
+      color: #ffd745
+    }
+
+    &:hover{
+      i{
+        transform: scale(8.0);
+      }
+    }
+  }
+}

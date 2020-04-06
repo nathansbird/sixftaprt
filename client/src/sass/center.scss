@@ -1,0 +1,54 @@
+#center-screen{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  #text-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    h1{
+      font-family: 'AvenirBold';
+      font-size: 128px;
+      margin: 0px;
+    }
+
+    #sfa-text-hidden{
+      color: transparent;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .no-after:after{
+      display: block;
+      content: '';
+      height: 0px;
+      width: 490px;
+      position: absolute;
+      background: #ffd745;
+      top: 0px;
+      left: 24px;
+      z-index: -1;
+      transition-delay: 300ms;
+      transition-duration: 1500ms;
+      transition-timing-function: cubic-bezier(.2,.87,0,.99);
+    }
+    
+    .after:after{
+      height: 96px;
+      top: 48px;
+    }
+    
+    p{
+      font-size: 28px;
+      font-family: 'AvenirRegular';
+      margin-top: 8px;
+      margin-left: auto;
+    }
+  }
+}

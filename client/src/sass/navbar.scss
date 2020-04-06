@@ -1,0 +1,53 @@
+#navbar-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  #navbar{
+    display: flex;
+    justify-content: space-between;
+
+    #logo{
+      margin: 48px;
+
+      h1{
+        margin: 0px;
+        font-family: 'AvenirBold';
+      }
+    }
+
+    #nav-items{
+      margin: 48px;
+      z-index: 3;
+      position: relative;
+  
+      a {
+        font-family: 'AvenirRegular';
+        font-size: 24px;
+        margin: 28px;
+        cursor: pointer;
+        position: relative;
+
+        &:after{
+          display: block;
+          content: '';
+          height: 3px;
+          position: absolute;
+          transition-duration: 300ms;
+          background: #ffd745;
+          width: 0%;
+          left: -12px;
+          top: 50%;
+        }
+  
+        &:hover:before{
+          width: 100%;
+        }
+
+        &:hover:after{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
