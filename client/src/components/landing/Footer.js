@@ -1,10 +1,9 @@
 import React from 'react';
-import '../sass/footer.scss';
 
 const Footer = () => {
   return(
     <div id='footer-screen'>
-      <div id='involved-container'>
+      <div id='involved-container' onClick={() => {window.open('https://globalu.typeform.com/to/yMjSFs', '_blank');}}>
         <h1 id='get-involved'>
           <span class="char1">G</span>
           <span class="char2">E</span>

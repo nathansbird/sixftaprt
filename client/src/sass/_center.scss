@@ -14,8 +14,14 @@
 
     h1{
       font-family: 'AvenirBold';
-      font-size: 128px;
-      margin: 0px;
+      font-size: 12vh;
+      margin: 0px 64px;
+    }
+
+    @media (max-width: 1000px) {
+      h1{
+        width: 300px;
+      }
     }
 
     #sfa-text-hidden{
@@ -28,7 +34,7 @@
       display: block;
       content: '';
       height: 0px;
-      width: 490px;
+      width: 30vw;
       position: absolute;
       background: #ffd745;
       top: 0px;
@@ -40,7 +46,7 @@
     }
     
     .after:after{
-      height: 96px;
+      height: 8vh;
       top: 48px;
     }
     
@@ -49,6 +55,13 @@
       font-family: 'AvenirRegular';
       margin-top: 8px;
       margin-left: auto;
+    }
+
+    @media (max-width: 1000px) {
+      p{
+        margin-bottom: 10vh;
+        margin-left: 64px;
+      }
     }
   }
 }

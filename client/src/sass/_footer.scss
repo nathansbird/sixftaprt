@@ -31,6 +31,8 @@
   justify-content: flex-end;
   flex-direction: column;
 
+  
+
   #involved-container{
     display: flex;
     padding-left: 96px;
@@ -85,4 +87,11 @@
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  #footer-screen {
+    transform: scale(0.8);
+    transform-origin: bottom left;
+  }  
 }

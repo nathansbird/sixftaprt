@@ -36,3 +36,8 @@ body {
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+@import 'center';
+@import 'footer';
+@import 'navbar';
+@import 'sidebar';

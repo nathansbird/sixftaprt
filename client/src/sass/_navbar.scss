@@ -6,9 +6,11 @@
   #navbar{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 
     #logo{
-      margin: 48px;
+      margin: 4vh;
+      margin-right: 12px;
 
       h1{
         margin: 0px;
@@ -17,16 +19,26 @@
     }
 
     #nav-items{
-      margin: 48px;
+      margin-top: 4vh;
+      height: fit-content;
       z-index: 3;
       position: relative;
   
       a {
         font-family: 'AvenirRegular';
         font-size: 24px;
-        margin: 28px;
         cursor: pointer;
         position: relative;
+        white-space: nowrap;
+
+        margin: 4vh;
+        padding: 24px;
+        padding-top: 30px;
+        padding-bottom: 18px;
+        margin-left: -12px;
+
+        color: unset;
+        text-decoration: none;
 
         &:after{
           display: block;
@@ -36,17 +48,19 @@
           transition-duration: 300ms;
           background: #ffd745;
           width: 0%;
-          left: -12px;
-          top: 50%;
-        }
-  
-        &:hover:before{
-          width: 100%;
+          left: 12px;
+          top: calc(50% + 8px);
         }
 
-        &:hover:after{
-          width: 100%;
+        &:not(#donation):hover:after{
+          width: 60%;
         }
+      }
+
+      #donation {
+        background: url(../assets/circle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
   }

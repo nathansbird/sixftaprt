@@ -1,7 +1,6 @@
 import React from 'react';
-import '../sass/sidebar.scss';
-import FacebookImage from '../assets/facebook.png';
-import InstagramImage from '../assets/instagram.png';
+import FacebookImage from '../../assets/facebook.png';
+import InstagramImage from '../../assets/instagram.png';
 
 const SideBar = () => {
   return(

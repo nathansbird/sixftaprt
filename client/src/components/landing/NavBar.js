@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/navbar.scss';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return(
@@ -9,9 +9,9 @@ const NavBar = () => {
           <h1>SIXFTAPRT</h1>
         </div>
         <div id='nav-items'>
-          <a>Products</a>
-          <a>Resources</a>
-          <a>Team</a>
+          <a id='donation' href="https://my.gobluefire.com/App/Form/76b858a5-8168-4ac8-8fd5-e82bd2eb9f9c" target="_blank">Donate</a>
+          <Link to="/products">Products</Link>
+          <Link to="/team">Team</Link>
         </div>
       </div>
     </div>

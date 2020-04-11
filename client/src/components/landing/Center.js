@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../sass/center.scss';
 
 const Center = () => {
   useEffect(() => {

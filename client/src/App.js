@@ -1,17 +1,20 @@
 import React from 'react';
 
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import SideBar from './components/SideBar';
-import Center from './components/Center';
+import Landing from './pages/Landing';
+import Team from './pages/Team';
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Center />
-      <SideBar />
-      <Footer />
+      <Switch>
+        <Route path="/" exact>
+          <Landing/>
+        </Route>
+        <Route path="/team">
+          <Team/>
+        </Route>
+      </Switch>
     </div>
   );
 }
