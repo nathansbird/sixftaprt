@@ -65,3 +65,10 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  #center-screen{
+    transform: scale(0.7);
+    transform-origin: center;
+  }
+}

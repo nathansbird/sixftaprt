@@ -10,12 +10,14 @@ const NavBar = () => {
         </div>
         <div id='nav-items'>
           <a id='donation' href="https://my.gobluefire.com/App/Form/76b858a5-8168-4ac8-8fd5-e82bd2eb9f9c" target="_blank">Donate</a>
-          <Link to="/products">Products</Link>
-          <Link to="/team">Team</Link>
+          
         </div>
       </div>
     </div>
   );
 }
+
+//<Link to="/products">Products</Link>
+//<Link to="/team">Team</Link>
 
 export default NavBar;

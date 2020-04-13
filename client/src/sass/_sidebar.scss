@@ -29,3 +29,10 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  #sidebar-screen {
+    transform: scale(0.8);
+    transform-origin: bottom right;
+  }  
+}
