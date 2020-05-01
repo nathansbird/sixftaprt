@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return(
@@ -9,7 +8,7 @@ const NavBar = () => {
           <h1>SIXFTAPRT</h1>
         </div>
         <div id='nav-items'>
-          <a id='donation' href="https://my.gobluefire.com/App/Form/76b858a5-8168-4ac8-8fd5-e82bd2eb9f9c" target="_blank">Donate</a>
+          <a id='donation' href="https://my.gobluefire.com/App/Form/76b858a5-8168-4ac8-8fd5-e82bd2eb9f9c" target="_blank" rel="noopener noreferrer">Donate</a>
           
         </div>
       </div>

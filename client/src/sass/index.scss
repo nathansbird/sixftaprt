@@ -37,7 +37,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@import 'center';
-@import 'footer';
-@import 'navbar';
-@import 'sidebar';
+@import 'landing/center';
+@import 'landing/footer';
+@import 'landing/navbar';
+@import 'landing/sidebar';
+
+@import 'prayer/form';
+@import 'prayer/form_item';
+@import 'prayer/list';
+@import 'prayer/list_item';
+
+@import 'thanks/thanks';
